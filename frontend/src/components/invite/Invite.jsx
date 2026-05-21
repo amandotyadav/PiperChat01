@@ -19,8 +19,7 @@ function Invite() {
   const [invalid_invite_link, setinvalid_invite_link] = useState(null);
 
 const [already_member, setAlreadyMember] = useState(false);   // 403 from backend
-  const [accept_failed, setAcceptFailed] = useState(false);     // 500 or network error
-  const [accepting, setAccepting] = useState(false);            // loading state on button
+
 
 
 
