@@ -136,10 +136,10 @@ function Navbar({ new_req_recieved, user_cred, onNavigate }) {
           onNavigate?.();
         }}
         className={[
-          "group relative grid h-12 w-12 place-items-center overflow-visible rounded-full transition-all duration-200",
+          "group relative grid h-12 w-12 place-items-center overflow-visible rounded-2xl border transition-all duration-200",
           activeServerId === "@me" || !activeServerId
-            ? "opacity-100 drop-shadow-md"
-            : "opacity-70 hover:opacity-100",
+            ? "border-brand-400/40 bg-brand-400/10 text-brand-300 drop-shadow-md"
+            : "border-white/10 bg-white/5 text-white/80 hover:bg-white/10",
         ].join(" ")}
         title="Home"
       >
