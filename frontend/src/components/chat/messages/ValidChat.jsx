@@ -33,6 +33,7 @@ function ValidChat() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [typingUsers, setTypingUsers] = useState({});
+  const messagesEndRef = useRef(null);
   const typingTimeoutRef = useRef(null);
   const typingUserTimeoutsRef = useRef({});
   const isTypingRef = useRef(false);
