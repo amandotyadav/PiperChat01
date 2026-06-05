@@ -120,3 +120,6 @@ export const profilePicValidator = () =>
     .optional({ values: "falsy" })
     .isString()
     .withMessage("Profile picture must be a string");
+
+export const friendIdValidator = () =>
+  body("friend_id").trim().notEmpty().withMessage("Friend ID is required");
